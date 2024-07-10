@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>To-Do List</title>
-        <h1>To-Do List</h1>
-    </head>
 
-    <body>
-    <a href="0703.html" target="_blank" title="0703">0703</a>       
-    <br><img src="park.jpg" width="500">
-    </body>
+<head>
+    <title>To-Do List</title>
+    <h1>To-Do List</h1>
+    <link rel="stylesheet" href="style.css">
+    <script src="todo.js"></script>
+</head>
+
+<body>
+    <div id="grid">
+        <p id="day">날짜선택
+            <br><input type="date" id="dateInput" onchange="getDate()" min="2024-07-10" max="2123-12-31">
+        </p>
+
+        <div id="TD">
+
+            <div id="dateOutput"></div>
+            <input id="todoInput" placeholder="할 일 추가" onkeypress="keyCheck()">
+
+            <input type="button" id="add" value="+" onclick="isEmpty()">
+            <span></span>
+            <span></span>
+            </input>
+
+            <ul id="todoList">
+
+            </ul>
+        </div>
+
+    </div>
+</body>
+
 </html>

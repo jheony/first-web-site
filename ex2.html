@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>hi</title>
+
+    <script>
+        var arr = {
+            "a":"1",
+            "b":"2"
+        };
+        var Body = {
+            setColor:function (color){
+                document.querySelector('body').style.color = color;
+            },
+            setBackgroundColor:function (color){
+                document.querySelector('body').style.backgroundColor = color;
+            }
+        }
+        function LinksSetColor(color) {
+            var i = 0;
+            var alist = document.querySelectorAll('a');
+
+            while (i < alist.length) {
+                alist[i].style.color = color;
+                i = i + 1;
+            }
+        }
+        function nightDayHandler(self) {
+            if (self.value === 'night') {
+                Body.setBackgroundColor('black');
+                Body.setColor('powderblue');
+                self.value = 'day';
+            }
+            else {
+                Body.setBackgroundColor('pink');
+                Body.setColor('black');
+                self.value = 'night';
+            }
+        }
+    </script>
+</head>
+
+<body>
+    
+    <input id="night_day" type="button" value='night' onclick="
+        nightDayHandler(this);
+    ">
+    <ol>
+        <script>
+
+            var w = ['a', 'b', 'c', 'd', 'e'];
+            var i = 0;
+
+            while (i < 4) {
+                document.write('<li><a href="naver.com">' + w[i] + '</a></li>');
+                i = i + 1;
+            }
+        </script>
+    </ol>
+    hi
+    <input id="night_day" type="button" value='night' onclick="
+        nightDayHandler(this);
+        
+    ">
+</body>
+
+</html>
