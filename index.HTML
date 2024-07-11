@@ -11,7 +11,8 @@
 <body>
     <div id="grid">
         <p id="day">날짜선택
-            <br><input type="date" id="dateInput" onchange="getDate()" min="2024-07-10" max="2123-12-31">
+            <br><input type="date" id="dateInput" onchange="getDate(), init()" min="2024-07-10" max="2123-12-31">
+
         </p>
 
         <div id="TD">
@@ -19,12 +20,12 @@
             <div id="dateOutput"></div>
             <input id="todoInput" placeholder="할 일 추가" onkeypress="keyCheck()">
 
-            <input type="button" id="add" value="+" onclick="isEmpty()">
+            <input type="button" id="add" value="+" onclick="isEmptyAdd()">
             <span></span>
             <span></span>
             </input>
 
-            <ul id="todoList">
+            <ul id="todoList" >
 
             </ul>
         </div>

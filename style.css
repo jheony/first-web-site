@@ -67,17 +67,13 @@ h1 {
     border-right: 2px solid red;
     border-bottom: 2px solid red;
 }
-#del{
-    /* text-align: right; */
-}
+
 #grid {
     display: grid;
     grid-template-columns: 1fr 4fr;
 }
 
-#TD {
-    display: block;
-}
+
 
 #dateOutput {
     height: 50px;
