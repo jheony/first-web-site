@@ -68,8 +68,11 @@ function load(toDoList) {
 function init() {
     const toDoList = document.getElementById('todoList');
 
-    for (const child of toDoList.childNodes) {
-        toDoList.removeChild(child);
+   for (const a of toDoList.childNodes) { // 모든 자식노드 초기화
+        for(const child of toDoList.children){
+            toDoList.removeChild(child);
+
+        }
     }
     arr = [];
 
